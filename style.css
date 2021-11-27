@@ -28,6 +28,11 @@ header h1 {
     position: fixed;
 }
 
+header h1:hover {
+    text-decoration: underline dotted white;
+    cursor: help;
+}
+
 header .start {
     transition-duration: 1s;
     color: whitesmoke;
@@ -152,6 +157,16 @@ header .stop {
     background: none;
     border: none;
     border-bottom: rgb(0, 216, 115) solid 1px;
+}
+
+.challenge .coins {
+    left: 20px;
+    top: 90px;
+    position: absolute;
+    color: whitesmoke;
+    background: none;
+    border: none;
+    border-bottom: rgb(216, 160, 5) solid 1px;
 }
 
 .challenge h3 {
