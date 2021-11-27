@@ -12,7 +12,7 @@ setTimeout(() => {
     console.log("Added page 2");
     fetch("https://gdbrowser.com/api/search/*?type=recent&page=2").then(res => res.json()).then(data => {
         data.forEach(level => {
-            rouletteList.push(level);
+            challenges.push(level);
         });
     });
 }, 600);
@@ -21,7 +21,7 @@ setTimeout(() => {
     console.log("Added page 3");
     fetch("https://gdbrowser.com/api/search/*?type=recent&page=3").then(res => res.json()).then(data => {
         data.forEach(level => {
-            rouletteList.push(level);
+            challenges.push(level);
         });
     });
 }, 400);
@@ -30,7 +30,7 @@ setTimeout(() => {
     console.log("Added page 4");
     fetch("https://gdbrowser.com/api/search/*?type=recent&page=4").then(res => res.json()).then(data => {
         data.forEach(level => {
-            rouletteList.push(level);
+            challenges.push(level);
         });
     });
 }, 1200);
@@ -39,7 +39,7 @@ setTimeout(() => {
     console.log("Added page 5");
     fetch("https://gdbrowser.com/api/search/*?type=recent&page=5").then(res => res.json()).then(data => {
         data.forEach(level => {
-            rouletteList.push(level);
+            challenges.push(level);
         });
     });
 }, 1600);
@@ -144,6 +144,8 @@ function _submit(_id, _id_input, _challengeID, _id_skip, _id_coins) {
 function skip(id) {
     const challenge = document.getElementById(`challenge-${id}`);
     document.querySelector(`#challenge-${id}`).getElementsByTagName("input")[0].style.display = "none";
+    document.querySelector(`#challenge-${id}`).getElementsByTagName("input")[1].style.display = "none";
+
     document.querySelector(`#challenge-${id}`).getElementsByTagName("button")[0].style.display = "none";
     document.querySelector(`#challenge-${id}`).getElementsByTagName("button")[1].style.display = "none";
     attempts -= 4;
