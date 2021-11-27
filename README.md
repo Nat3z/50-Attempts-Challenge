@@ -9,3 +9,6 @@ This website makes this process of getting recent levels easier by grabbing the 
 
 # Contributions/Software Used
 - [GD Browser API - GD Colon](https://gdbrowser.com/)
+
+# Notes
+- The website is currently not formatted correctly for mobile usage. Please either use a PC or orient your phone to horizontal.
